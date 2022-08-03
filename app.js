@@ -1,7 +1,5 @@
 var mysql = require('mysql')
 var bodyParser = require('body-parser')
-var bcrypt = require('bcryptjs')
-var crypto = require('crypto')
 var fs = require('fs');
 
 var express = require('express');
@@ -32,7 +30,8 @@ app.get('/', function (req, res) {
 });
 
 app.use(function (req, res, next) {
-  next(createError(404));
+  res.send("four oh four")
+  res.status(404);
 });
 
 module.exports = app
