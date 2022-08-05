@@ -1,21 +1,12 @@
-#!/usr/bin/env node
+let config = require('../config.json')
 
-/**
- * Module dependencies.
- */
+let app = require('../app');
+let debug = require('debug')('peterdev:server');
+let http = require('http');
 
-// import Debug from 'debug'
-// const debug = Debug("csaaresttest:server")
-// import * as app from '../app.js'
-// import * as http from 'http'
+let argv = require('minimist')(process.argv.slice(2));
 
-var config = require('../config.json')
-
-var app = require('../app');
-var debug = require('debug')('peterdev:server');
-var http = require('http');
-
-let port = config.port
+let port = argv['p'];
 
 app.set('port', port);
 
@@ -23,7 +14,7 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+let server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.

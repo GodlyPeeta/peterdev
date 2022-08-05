@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "deploy": "node ./bin/www -p 80",
+    "test": "node ./bin/www -p 8080"
   },
   "dependencies": {
     "aws-sdk": "^2.1158.0",
