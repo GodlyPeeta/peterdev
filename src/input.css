@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav {
+    z-index: 10
+}
+
+nav.scroll {
+    @apply shadow-2xl;
+    border-bottom: 0px;
+}

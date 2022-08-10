@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "deploy": "node ./bin/www -p 80",
-    "test": "node ./bin/www -p 8080",
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "test": "nodemon -e html,css,js ./bin/www.js -p 8080",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "build-react": "npx babel --watch src/react --out-dir public/react --presets react-app/prod"
   },
   "dependencies": {
     "aws-sdk": "^2.1158.0",
     "axios": "^0.27.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
     "cookie-parser": "~1.4.4",
@@ -21,6 +24,23 @@
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "node-fetch": "^3.2.9",
+    "nodemon": "^2.0.19",
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "main": "app.js",
+  "bin": {
+    "peterdev": "bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GodlyPeeta/peterdev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GodlyPeeta/peterdev/issues"
+  },
+  "homepage": "https://github.com/GodlyPeeta/peterdev#readme",
+  "description": ""
 }
