@@ -565,12 +565,40 @@ video {
   margin: auto;
 }
 
-.ml-10{
-  margin-left: 2.5rem;
+.mt-1\.5{
+  margin-top: 0.375rem;
 }
 
-.ml-0{
-  margin-left: 0px;
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
+}
+
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
+.ml-16{
+  margin-left: 4rem;
+}
+
+.mr-7{
+  margin-right: 1.75rem;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -581,32 +609,42 @@ video {
   width: 100%;
 }
 
-.w-10{
-  width: 2.5rem;
+.w-7{
+  width: 1.75rem;
 }
 
 .flex-initial{
   flex: 0 1 auto;
 }
 
-.flex-grow{
-  flex-grow: 1;
-}
-
 .flex-wrap{
   flex-wrap: wrap;
 }
 
-.items-center{
-  align-items: center;
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-between{
   justify-content: space-between;
 }
 
-.rounded{
-  border-radius: 0.25rem;
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .border-t{
@@ -615,16 +653,17 @@ video {
 
 .border-text-1{
   --tw-border-opacity: 1;
-  border-color: rgb(121 131 161 / var(--tw-border-opacity));
+  border-color: rgb(167 177 208 / var(--tw-border-opacity));
+}
+
+.border-copper-penny{
+  --tw-border-opacity: 1;
+  border-color: rgb(183 109 104 / var(--tw-border-opacity));
 }
 
 .bg-background{
   --tw-bg-opacity: 1;
   background-color: rgb(11 19 43 / var(--tw-bg-opacity));
-}
-
-.p-5{
-  padding: 1.25rem;
 }
 
 .px-3{
@@ -637,13 +676,18 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.text-left{
-  text-align: left;
+.font-mono{
+  font-family: Roboto Mono;
 }
 
 .text-3xl{
@@ -651,16 +695,17 @@ video {
   line-height: 2.25rem;
 }
 
-.font-black{
-  font-weight: 900;
-}
-
-.font-bold{
-  font-weight: 700;
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-light{
   font-weight: 300;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .text-copper-penny{
@@ -670,13 +715,33 @@ video {
 
 .text-text-1{
   --tw-text-opacity: 1;
-  color: rgb(121 131 161 / var(--tw-text-opacity));
+  color: rgb(167 177 208 / var(--tw-text-opacity));
 }
 
 .backdrop-blur-lg{
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150{
+  transition-duration: 150ms;
+}
+
+.duration-100{
+  transition-duration: 100ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 nav {
@@ -688,4 +753,24 @@ nav.scroll{
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   border-bottom: 0px;
+}
+
+.hover\:bg-text-3:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 44 61 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-copper-penny:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(183 109 104 / var(--tw-bg-opacity));
+}
+
+.hover\:text-background:hover{
+  --tw-text-opacity: 1;
+  color: rgb(11 19 43 / var(--tw-text-opacity));
+}
+
+.hover\:text-copper-penny:hover{
+  --tw-text-opacity: 1;
+  color: rgb(183 109 104 / var(--tw-text-opacity));
 }

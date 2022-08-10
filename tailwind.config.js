@@ -10,8 +10,9 @@ module.exports = {
       "pink-lace": "#FDE2FF",
       "background": "#0B132B",
       "headers": "#1C2541",
-      "text-1": "#7983A1",
+      "text-1": "#A7B1D0",
       "text-2": "#424A66",
+      "text-3": "#272C3D",
       "copper-penny": "#B76D68"
     },
     fontFamily: {

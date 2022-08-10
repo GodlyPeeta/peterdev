@@ -1,30 +1,116 @@
 'use strict';
 
-var navbar = React.createElement(
-    "div",
-    { className: "fixed flex w-full backdrop-blur-lg items-center justify-between flex-wrap p-5 m-auto animated" },
-    React.createElement("div", { "class": "flex-initial w-10 border-t border-text-1" }),
-    React.createElement(
-        "a",
-        { href: "/", className: "text-copper-penny text-3xl font-light ml-10 float-left" },
-        "Peter Zhou"
-    ),
-    React.createElement(
-        "div",
-        null,
-        React.createElement(
-            "router-link",
-            { to: "/login", "class": "text-text-1 hover:bg-gray-700 px-3 rounded py-1" },
-            "Login"
-        ),
-        React.createElement(
-            "router-link",
-            { to: "/register", "class": "text-text-1 hover:bg-gray-700 px-3 rounded py-1" },
-            "Register"
-        )
-    )
-);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NavBarHeaders = function (_React$Component) {
+    _inherits(NavBarHeaders, _React$Component);
+
+    function NavBarHeaders() {
+        _classCallCheck(this, NavBarHeaders);
+
+        return _possibleConstructorReturn(this, (NavBarHeaders.__proto__ || Object.getPrototypeOf(NavBarHeaders)).apply(this, arguments));
+    }
+
+    _createClass(NavBarHeaders, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "flex justify-between mt-1.5 rounded-full px-3 py-1 hover:bg-text-3 transition ease-in-out" },
+                React.createElement(
+                    "div",
+                    { className: "font-mono text-copper-penny" },
+                    this.props.number
+                ),
+                React.createElement(
+                    "div",
+                    { className: "text-text-1 text-thin ml-1" },
+                    this.props.title
+                )
+            );
+        }
+    }]);
+
+    return NavBarHeaders;
+}(React.Component);
+
+var Navbar = function (_React$Component2) {
+    _inherits(Navbar, _React$Component2);
+
+    function Navbar() {
+        _classCallCheck(this, Navbar);
+
+        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+    }
+
+    _createClass(Navbar, [{
+        key: "onResumeClick",
+        value: function onResumeClick(e) {
+            e.preventDefault();
+            document.location.href = "/resume";
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "mt-7" },
+                React.createElement(
+                    "div",
+                    { className: "fixed flex w-full backdrop-blur-lg flex-wrap m-auto animated" },
+                    React.createElement("div", { className: "flex-initial w-7 border-t border-text-1 mt-4" }),
+                    React.createElement(
+                        "a",
+                        { href: "/", className: "text-copper-penny text-3xl font-light float-left ml-4" },
+                        "Peter Zhou"
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "fixed flex justify-end w-full flex-wrap m-auto animated" },
+                    React.createElement(
+                        "div",
+                        { className: "flex space-x-10" },
+                        React.createElement(
+                            "a",
+                            { href: "/" },
+                            React.createElement(NavBarHeaders, { number: "1.", title: "About Me", className: "" })
+                        ),
+                        React.createElement(
+                            "a",
+                            { href: "/projects" },
+                            React.createElement(NavBarHeaders, { number: "2.", title: "Projects", className: "" })
+                        ),
+                        React.createElement(
+                            "a",
+                            { href: "/work" },
+                            React.createElement(NavBarHeaders, { number: "3.", title: "Work", className: "" })
+                        ),
+                        React.createElement(
+                            "a",
+                            { href: "/contact" },
+                            React.createElement(NavBarHeaders, { number: "4.", title: "Contact", className: "" })
+                        )
+                    ),
+                    React.createElement(
+                        "button",
+                        { onClick: this.onResumeClick, type: "button", className: "font-mono inline-block px-4 py-2 border-2 ml-16 mr-7 text-base border-copper-penny text-copper-penny font-medium rounded-md hover:bg-copper-penny hover:text-background transition duration-150 ease-in-out" },
+                        "Resume"
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Navbar;
+}(React.Component);
 
 var domContainer = document.querySelector('#navbar');
 var root = ReactDOM.createRoot(domContainer);
-root.render(navbar);
+root.render(React.createElement(Navbar, null));
