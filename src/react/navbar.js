@@ -33,9 +33,9 @@ class Navbar extends React.Component {
                 </div>
                 
                 {/* Right side */}
-                <div className="fixed flex justify-end w-full flex-wrap m-auto animated mt-4">
+                <div className="fixed flex justify-end w-full flex-wrap m-auto animated">
 
-                    <div className="flex space-x-10">
+                    <div className="flex space-x-10 mt-4">
 
                         <a href="/" >
                             <NavBarHeaders number="1." title="About Me" className="" />
@@ -54,7 +54,7 @@ class Navbar extends React.Component {
                         </a>
 
                     </div>
-                    <div className="ml-14 mr-7">
+                    <div className="ml-14 mr-7 mt-3">
                         <OutlineButton text="Resume" clickHandle={this.onResumeClick}/>
                     </div>
                 </div>

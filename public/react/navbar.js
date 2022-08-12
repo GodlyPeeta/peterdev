@@ -73,10 +73,10 @@ var Navbar = function (_React$Component2) {
                 ),
                 React.createElement(
                     "div",
-                    { className: "fixed flex justify-end w-full flex-wrap m-auto animated mt-4" },
+                    { className: "fixed flex justify-end w-full flex-wrap m-auto animated" },
                     React.createElement(
                         "div",
-                        { className: "flex space-x-10" },
+                        { className: "flex space-x-10 mt-4" },
                         React.createElement(
                             "a",
                             { href: "/" },
@@ -100,7 +100,7 @@ var Navbar = function (_React$Component2) {
                     ),
                     React.createElement(
                         "div",
-                        { className: "ml-14 mr-7" },
+                        { className: "ml-14 mr-7 mt-3" },
                         React.createElement(OutlineButton, { text: "Resume", clickHandle: this.onResumeClick })
                     )
                 )
