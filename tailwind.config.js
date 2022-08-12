@@ -24,7 +24,47 @@ module.exports = {
         'Roboto Mono'
       ]
     },
-    extend: {},
+    extend: {
+      
+      // that is animation class
+      animation: {
+        fade: 'fadeIn 0.75s ease-in-out',
+        pulsate: 'pulsating 2s ease-in-out infinite',
+        slideDown: 'slideDown 1s cubic-bezier(0, 0, 0.2, 1)',
+        slideUp: 'slideUp 1s cubic-bezier(0, 0, 0.2, 1)'
+      },
+
+      // that is actual animation
+      keyframes: theme => ({
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+        pulsating: {
+          '0%': { opacity: 1 },
+          '50%': { opacity: 0.75 },
+          '100%': { opacity: 1 },
+        },
+        slideDown: {
+          '0%': { 
+            transform: 'translateY(-1rem)'
+          },
+          '100%': { 
+            transform: 'translateY(0)'
+          },
+        },
+        slideUp: {
+          '0%': { 
+            transform: 'translateY(1rem)'
+          },
+          '100%': { 
+            transform: 'translateY(0)'
+          },
+        },
+      }),
+    },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 }

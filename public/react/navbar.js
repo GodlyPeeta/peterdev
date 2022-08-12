@@ -22,7 +22,7 @@ var NavBarHeaders = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 "div",
-                { className: "flex justify-between mt-1.5 rounded-full px-3 py-1 hover:bg-text-3 transition ease-in-out" },
+                { className: "flex justify-between mt-1.5 rounded-full px-3 py-1 hover:bg-text-2/20 transition ease-in-out" },
                 React.createElement(
                     "div",
                     { className: "font-mono text-copper-penny" },
@@ -98,7 +98,11 @@ var Navbar = function (_React$Component2) {
                             React.createElement(NavBarHeaders, { number: "4.", title: "Contact", className: "" })
                         )
                     ),
-                    React.createElement(OutlineButton, { text: "Resume", clickHandle: this.onResumeClick })
+                    React.createElement(
+                        "div",
+                        { className: "ml-14 mr-7" },
+                        React.createElement(OutlineButton, { text: "Resume", clickHandle: this.onResumeClick })
+                    )
                 )
             );
         }

@@ -3,7 +3,7 @@
 class NavBarHeaders extends React.Component {
     render() {
         return (
-            <div className="flex justify-between mt-1.5 rounded-full px-3 py-1 hover:bg-text-3 transition ease-in-out">
+            <div className="flex justify-between mt-1.5 rounded-full px-3 py-1 hover:bg-text-2/20 transition ease-in-out">
                 <div className="font-mono text-copper-penny">
                     {this.props.number}
                 </div>
@@ -54,8 +54,9 @@ class Navbar extends React.Component {
                         </a>
 
                     </div>
-
-                    <OutlineButton text="Resume" clickHandle={this.onResumeClick}/>
+                    <div className="ml-14 mr-7">
+                        <OutlineButton text="Resume" clickHandle={this.onResumeClick}/>
+                    </div>
                 </div>
 
             </div>
