@@ -60,20 +60,20 @@ var Navbar = function (_React$Component2) {
         value: function render() {
             return React.createElement(
                 "div",
-                { className: "mt-7" },
+                { className: "" },
                 React.createElement(
                     "div",
-                    { className: "fixed flex w-full backdrop-blur-lg flex-wrap m-auto animated" },
-                    React.createElement("div", { className: "flex-initial w-7 border-t border-text-1 mt-4" }),
+                    { className: "fixed flex w-full h-20 backdrop-blur-lg flex-wrap animated" },
+                    React.createElement("div", { className: "flex-initial w-7 border-t-2 border-text-1 mt-8" }),
                     React.createElement(
                         "a",
-                        { href: "/", className: "text-copper-penny text-3xl font-light float-left ml-4" },
+                        { href: "/", className: "text-copper-penny text-3xl font-light float-left ml-4 mt-4" },
                         "Peter Zhou"
                     )
                 ),
                 React.createElement(
                     "div",
-                    { className: "fixed flex justify-end w-full flex-wrap m-auto animated" },
+                    { className: "fixed flex justify-end w-full flex-wrap m-auto animated mt-4" },
                     React.createElement(
                         "div",
                         { className: "flex space-x-10" },
@@ -98,11 +98,7 @@ var Navbar = function (_React$Component2) {
                             React.createElement(NavBarHeaders, { number: "4.", title: "Contact", className: "" })
                         )
                     ),
-                    React.createElement(
-                        "button",
-                        { onClick: this.onResumeClick, type: "button", className: "font-mono inline-block px-4 py-2 border-2 ml-16 mr-7 text-base border-copper-penny text-copper-penny font-medium rounded-md hover:bg-copper-penny hover:text-background transition duration-150 ease-in-out" },
-                        "Resume"
-                    )
+                    React.createElement(OutlineButton, { text: "Resume", clickHandle: this.onResumeClick })
                 )
             );
         }

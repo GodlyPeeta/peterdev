@@ -25,14 +25,15 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <div className="mt-7">
-
-                <div className="fixed flex w-full backdrop-blur-lg flex-wrap m-auto animated">
-                    <div className="flex-initial w-7 border-t border-text-1 mt-4"></div>
-                    <a href="/" className="text-copper-penny text-3xl font-light float-left ml-4">Peter Zhou</a>
+            <div className="">
+                {/* left side */}
+                <div className="fixed flex w-full h-20 backdrop-blur-lg flex-wrap animated">
+                    <div className="flex-initial w-7 border-t-2 border-text-1 mt-8"></div>
+                    <a href="/" className="text-copper-penny text-3xl font-light float-left ml-4 mt-4">Peter Zhou</a>
                 </div>
-
-                <div className="fixed flex justify-end w-full flex-wrap m-auto animated">
+                
+                {/* Right side */}
+                <div className="fixed flex justify-end w-full flex-wrap m-auto animated mt-4">
 
                     <div className="flex space-x-10">
 
@@ -54,9 +55,7 @@ class Navbar extends React.Component {
 
                     </div>
 
-                    <button onClick={this.onResumeClick} type="button" className="font-mono inline-block px-4 py-2 border-2 ml-16 mr-7 text-base border-copper-penny text-copper-penny font-medium rounded-md hover:bg-copper-penny hover:text-background transition duration-150 ease-in-out">
-                        Resume
-                    </button>
+                    <OutlineButton text="Resume" clickHandle={this.onResumeClick}/>
                 </div>
 
             </div>
