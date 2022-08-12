@@ -63,7 +63,7 @@ var Navbar = function (_React$Component2) {
                 { className: "" },
                 React.createElement(
                     "div",
-                    { className: "fixed flex w-full h-20 backdrop-blur-lg flex-wrap animated" },
+                    { className: "fixed flex w-full h-20 backdrop-blur-lg flex-wrap animated " },
                     React.createElement("div", { className: "flex-initial w-7 border-t-2 border-text-2 mt-8" }),
                     React.createElement(
                         "a",

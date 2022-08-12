@@ -6,29 +6,29 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var OutlineButton = function (_React$Component) {
-    _inherits(OutlineButton, _React$Component);
+var Hyperlink = function (_React$Component) {
+    _inherits(Hyperlink, _React$Component);
 
-    function OutlineButton() {
-        _classCallCheck(this, OutlineButton);
+    function Hyperlink() {
+        _classCallCheck(this, Hyperlink);
 
-        return _possibleConstructorReturn(this, (OutlineButton.__proto__ || Object.getPrototypeOf(OutlineButton)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Hyperlink.__proto__ || Object.getPrototypeOf(Hyperlink)).apply(this, arguments));
     }
 
-    _createClass(OutlineButton, [{
+    _createClass(Hyperlink, [{
         key: "render",
         value: function render() {
             return React.createElement(
-                "button",
-                { type: "button", onClick: this.props.clickHandle, className: "font-mono inline-block px-4 py-2.5 border-2 text-base border-copper-penny text-copper-penny font-medium rounded-md hover:bg-copper-penny hover:text-background transition duration-150 ease-in-out " },
+                "a",
+                { href: this.props.link, className: "underline text-medium-slate-blue hover:text-medium-slate-blue/50 duration-100" },
                 this.props.text
             );
         }
     }]);
 
-    return OutlineButton;
+    return Hyperlink;
 }(React.Component);
 
-var domContainer = document.querySelector('#outlinebutton');
+var domContainer = document.querySelector('#hyperlink');
 var root = ReactDOM.createRoot(domContainer);
-root.render(React.createElement(OutlineButton, null));
+root.render(React.createElement(Hyperlink, null));

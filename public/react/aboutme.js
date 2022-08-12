@@ -6,31 +6,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AboutMeHyperlink = function (_React$Component) {
-    _inherits(AboutMeHyperlink, _React$Component);
-
-    function AboutMeHyperlink() {
-        _classCallCheck(this, AboutMeHyperlink);
-
-        return _possibleConstructorReturn(this, (AboutMeHyperlink.__proto__ || Object.getPrototypeOf(AboutMeHyperlink)).apply(this, arguments));
-    }
-
-    _createClass(AboutMeHyperlink, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "a",
-                { href: this.props.link, className: "underline text-medium-slate-blue hover:text-medium-slate-blue/50 duration-100" },
-                this.props.text
-            );
-        }
-    }]);
-
-    return AboutMeHyperlink;
-}(React.Component);
-
-var AboutMe = function (_React$Component2) {
-    _inherits(AboutMe, _React$Component2);
+var AboutMe = function (_React$Component) {
+    _inherits(AboutMe, _React$Component);
 
     function AboutMe() {
         _classCallCheck(this, AboutMe);
@@ -134,11 +111,11 @@ var AboutMe = function (_React$Component2) {
                             "div",
                             { className: "font-thin animate-[slideDown_1.25s]" },
                             "I have worked on a ",
-                            React.createElement(AboutMeHyperlink, { link: "/", text: "RESTful API for the backend of a school's app" }),
+                            React.createElement(Hyperlink, { link: "/", text: "RESTful API for the backend of a school's app" }),
                             ", made a ",
-                            React.createElement(AboutMeHyperlink, { link: "/", text: "Discord bot to track users for the rhythm game Osu" }),
+                            React.createElement(Hyperlink, { link: "/", text: "Discord bot to track users for the rhythm game Osu" }),
                             ", and participated in the ",
-                            React.createElement(AboutMeHyperlink, { link: "/", text: "Vex Robotics Worlds tournament in Dallas Texas" }),
+                            React.createElement(Hyperlink, { link: "/", text: "Vex Robotics Worlds tournament in Dallas Texas" }),
                             "."
                         ),
                         React.createElement("br", null),
@@ -152,7 +129,7 @@ var AboutMe = function (_React$Component2) {
                             { className: "flex mt-5 justify-center mr-5 animate-slideUp" },
                             React.createElement(OutlineButton, { text: "View my Resume", clickHandle: function clickHandle(e) {
                                     e.preventDefault();document.location.href = "/resume";
-                                } })
+                                }, extra: "" })
                         )
                     )
                 )
