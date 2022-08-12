@@ -36,9 +36,9 @@ module.exports = {
 
       // that is actual animation
       keyframes: theme => ({
-        fadeOut: {
-          '0%': { opacity: 1 },
-          '100%': { opacity: 0 },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
         pulsating: {
           '0%': { opacity: 1 },
