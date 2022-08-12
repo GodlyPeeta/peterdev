@@ -20,7 +20,7 @@ var Hyperlink = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 "a",
-                { href: this.props.link, className: "underline text-medium-slate-blue hover:text-medium-slate-blue/50 duration-100" },
+                { href: this.props.link, target: this.props.target, className: "underline text-medium-slate-blue hover:text-medium-slate-blue/50 duration-100" },
                 this.props.text
             );
         }

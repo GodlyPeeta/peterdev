@@ -54,7 +54,7 @@ var MadeUsing = function (_React$Component) {
                 ".",
                 React.createElement("br", null),
                 "Fork or view the source code on ",
-                React.createElement(Hyperlink, { link: "/", text: "Github" }),
+                React.createElement(Hyperlink, { link: "https://github.com/GodlyPeeta/peterdev", target: "_blank", text: "Github" }),
                 "."
             );
         }
