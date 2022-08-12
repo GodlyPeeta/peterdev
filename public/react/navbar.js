@@ -30,7 +30,7 @@ var NavBarHeaders = function (_React$Component) {
                 ),
                 React.createElement(
                     "div",
-                    { className: "text-text-1 text-thin ml-1" },
+                    { className: "text-text-2 text-thin ml-1" },
                     this.props.title
                 )
             );
@@ -64,7 +64,7 @@ var Navbar = function (_React$Component2) {
                 React.createElement(
                     "div",
                     { className: "fixed flex w-full h-20 backdrop-blur-lg flex-wrap animated" },
-                    React.createElement("div", { className: "flex-initial w-7 border-t-2 border-text-1 mt-8" }),
+                    React.createElement("div", { className: "flex-initial w-7 border-t-2 border-text-2 mt-8" }),
                     React.createElement(
                         "a",
                         { href: "/", className: "text-copper-penny text-3xl font-light float-left ml-4 mt-4" },

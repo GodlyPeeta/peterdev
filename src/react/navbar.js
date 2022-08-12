@@ -8,7 +8,7 @@ class NavBarHeaders extends React.Component {
                     {this.props.number}
                 </div>
 
-                <div className="text-text-1 text-thin ml-1">
+                <div className="text-text-2 text-thin ml-1">
                     {this.props.title}
                 </div>
             </div>
@@ -28,7 +28,7 @@ class Navbar extends React.Component {
             <div className="">
                 {/* left side */}
                 <div className="fixed flex w-full h-20 backdrop-blur-lg flex-wrap animated">
-                    <div className="flex-initial w-7 border-t-2 border-text-1 mt-8"></div>
+                    <div className="flex-initial w-7 border-t-2 border-text-2 mt-8"></div>
                     <a href="/" className="text-copper-penny text-3xl font-light float-left ml-4 mt-4">Peter Zhou</a>
                 </div>
                 

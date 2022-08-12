@@ -6,13 +6,13 @@ module.exports = {
   ],
   theme: {
     colors: {
-      "medium-slate-blue": "#8884FF",
+      "medium-slate-blue": "#7b77f7",
       "pink-lace": "#FDE2FF",
-      "background": "#0B132B",
+      "background": "#171f36",
       "headers": "#1C2541",
-      "text-1": "#A7B1D0",
-      "text-2": "#8892B0",
-      "text-3": "#424A66",
+      "text-1": "#CCD6F6",
+      "text-2": "#A7B1D0",
+      "text-3": "#8892B0",
       "copper-penny": "#B76D68"
     },
     fontFamily: {
