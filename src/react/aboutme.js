@@ -8,13 +8,10 @@ class AboutMe extends React.Component {
                     <div className="">
                         <div className="animate-[slideDown_1s]">
                             <div className="font-mono text-copper-penny">
-                                Hey, this is
+                                Hey! This is 
                             </div>
                             <div className="text-text-1 text-9xl subpixel-antialiased">
-                                PETER <br></br>ZHOU'S
-                            </div>
-                            <div className="font-mono text-copper-penny float-right">
-                                personal website
+                                PETER <br></br>ZHOU
                             </div>
                         </div>
 
@@ -46,7 +43,7 @@ class AboutMe extends React.Component {
                     </div>
 
                     {/* right side */}
-                    <div className="text-text-2 text-lg w-[26rem] mt-1">
+                    <div className="text-text-2 text-lg w-[26rem]">
                         <div className="font-thin animate-[slideDown_1.75s]">
                             I'm a grade 12 student in Canada, on the path to become a <span className="text-copper-penny">software engineer</span>.
                         </div>

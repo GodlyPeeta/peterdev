@@ -33,19 +33,14 @@ var AboutMe = function (_React$Component) {
                             React.createElement(
                                 "div",
                                 { className: "font-mono text-copper-penny" },
-                                "Hey, this is"
+                                "Hey! This is"
                             ),
                             React.createElement(
                                 "div",
                                 { className: "text-text-1 text-9xl subpixel-antialiased" },
                                 "PETER ",
                                 React.createElement("br", null),
-                                "ZHOU'S"
-                            ),
-                            React.createElement(
-                                "div",
-                                { className: "font-mono text-copper-penny float-right" },
-                                "personal website"
+                                "ZHOU"
                             )
                         ),
                         React.createElement(
@@ -94,7 +89,7 @@ var AboutMe = function (_React$Component) {
                     ),
                     React.createElement(
                         "div",
-                        { className: "text-text-2 text-lg w-[26rem] mt-1" },
+                        { className: "text-text-2 text-lg w-[26rem]" },
                         React.createElement(
                             "div",
                             { className: "font-thin animate-[slideDown_1.75s]" },
