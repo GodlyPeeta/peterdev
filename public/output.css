@@ -1016,6 +1016,10 @@ video {
   color: rgb(183 109 104 / 0.6);
 }
 
+.text-copper-penny\/70{
+  color: rgb(183 109 104 / 0.7);
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;

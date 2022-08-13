@@ -9,13 +9,11 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index/index')
 let projectRouter = require('./routes/projects/projects')
-let playgroundRouter = require('./routes/playground/playground')
 
 let app = express();
 
 app.use('/', indexRouter);
-// app.use('/projects', projectRouter);
- app.use('/playground', playgroundRouter);
+app.use('/projects', projectRouter);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({

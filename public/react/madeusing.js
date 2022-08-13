@@ -24,36 +24,42 @@ var MadeUsing = function (_React$Component) {
                 "This page was made using",
                 React.createElement(
                     "span",
-                    { className: "text-copper-penny/60" },
+                    { className: "text-copper-penny" },
                     " Node.js"
                 ),
                 ",",
                 React.createElement(
                     "span",
-                    { className: "text-copper-penny/60" },
+                    { className: "text-copper-penny" },
                     " Express.js"
                 ),
                 ",",
                 React.createElement(
                     "span",
-                    { className: "text-copper-penny/60" },
+                    { className: "text-copper-penny" },
                     " Tailwindcss"
                 ),
                 ",",
                 React.createElement(
                     "span",
-                    { className: "text-copper-penny/60" },
+                    { className: "text-copper-penny" },
                     " React"
+                ),
+                ",",
+                React.createElement(
+                    "span",
+                    { className: "text-copper-penny" },
+                    " MySql"
                 ),
                 " and",
                 React.createElement(
                     "span",
-                    { className: "text-copper-penny/60" },
+                    { className: "text-copper-penny" },
                     " Cloudflare"
                 ),
                 ".",
                 React.createElement("br", null),
-                "Fork or view the source code on ",
+                "Built and designed by Peter Zhou, fork or view the source code on ",
                 React.createElement(Hyperlink, { link: "https://github.com/GodlyPeeta/peterdev", target: "_blank", text: "Github" }),
                 "."
             );
