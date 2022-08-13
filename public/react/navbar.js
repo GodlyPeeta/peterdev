@@ -85,12 +85,12 @@ var Navbar = function (_React$Component2) {
                         React.createElement(
                             "a",
                             { href: "/projects" },
-                            React.createElement(NavBarHeaders, { number: "2.", title: "Projects", className: "" })
+                            React.createElement(NavBarHeaders, { number: "2.", title: "Featured Projects", className: "" })
                         ),
                         React.createElement(
                             "a",
-                            { href: "/work" },
-                            React.createElement(NavBarHeaders, { number: "3.", title: "Work", className: "" })
+                            { href: "/experiences" },
+                            React.createElement(NavBarHeaders, { number: "3.", title: "Experiences", className: "" })
                         ),
                         React.createElement(
                             "a",

@@ -42,11 +42,11 @@ class Navbar extends React.Component {
                         </a>
 
                         <a href="/projects" >
-                            <NavBarHeaders number="2." title="Projects" className="" />
+                            <NavBarHeaders number="2." title="Featured Projects" className="" />
                         </a>
 
-                        <a href="/work" >
-                            <NavBarHeaders number="3." title="Work" className="" />
+                        <a href="/experiences" >
+                            <NavBarHeaders number="3." title="Experiences" className="" />
                         </a>
 
                         <a href="/contact" >
