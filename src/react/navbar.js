@@ -20,7 +20,7 @@ class Navbar extends React.Component {
 
     onResumeClick(e) {
         e.preventDefault();
-        document.location.href = "/resume";
+        document.location.href = "/PeterZhouResume.pdf";
     }
 
     render() {

@@ -53,7 +53,7 @@ var Navbar = function (_React$Component2) {
         key: "onResumeClick",
         value: function onResumeClick(e) {
             e.preventDefault();
-            document.location.href = "/resume";
+            document.location.href = "/PeterZhouResume.pdf";
         }
     }, {
         key: "render",

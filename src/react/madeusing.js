@@ -10,7 +10,7 @@ class MadeUsing extends React.Component {
                 <span className="text-copper-penny"> React</span> and
                 <span className="text-copper-penny"> Cloudflare</span>.
                 <br></br>
-                Built and designed from scratch by Peter Zhou, fork or view the source code on <Hyperlink link="https://github.com/GodlyPeeta/peterdev" target="_blank" text="Github" />.
+                Built and designed from <b>scratch</b> by Peter Zhou, fork or view the source code on <Hyperlink link="https://github.com/GodlyPeeta/peterdev" target="_blank" text="Github" />.
             </div>
         );
     }

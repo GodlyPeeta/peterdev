@@ -53,7 +53,13 @@ var MadeUsing = function (_React$Component) {
                 ),
                 ".",
                 React.createElement("br", null),
-                "Built and designed from scratch by Peter Zhou, fork or view the source code on ",
+                "Built and designed from ",
+                React.createElement(
+                    "b",
+                    null,
+                    "scratch"
+                ),
+                " by Peter Zhou, fork or view the source code on ",
                 React.createElement(Hyperlink, { link: "https://github.com/GodlyPeeta/peterdev", target: "_blank", text: "Github" }),
                 "."
             );
