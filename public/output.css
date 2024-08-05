@@ -670,6 +670,10 @@ video {
   width: 32rem;
 }
 
+.w-\[27rem\]{
+  width: 27rem;
+}
+
 .flex-initial{
   flex: 0 1 auto;
 }
@@ -843,6 +847,11 @@ video {
 .animate-slideUp{
   -webkit-animation: slideUp 1s cubic-bezier(0, 0, 0.2, 1);
           animation: slideUp 1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.animate-\[sideDown_1\.75s\]{
+  -webkit-animation: sideDown 1.75s;
+          animation: sideDown 1.75s;
 }
 
 .flex-col{

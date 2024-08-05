@@ -89,11 +89,11 @@ var AboutMe = function (_React$Component) {
                     ),
                     React.createElement(
                         "div",
-                        { className: "text-text-2 text-lg w-[32rem]" },
+                        { className: "text-text-2 text-lg w-[27rem]" },
                         React.createElement(
                             "div",
-                            { className: "font-thin animate-[slideDown_1.75s]" },
-                            "I'm a second year undergrad at the University of Toronto, on the road to becoming a ",
+                            { className: "font-thin animate-[sideDown_1.75s]" },
+                            "I'm a second year undergrad at the University of Toronto, becoming a ",
                             React.createElement(
                                 "span",
                                 { className: "text-copper-penny" },
@@ -105,8 +105,8 @@ var AboutMe = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "font-thin animate-[slideDown_1.25s]" },
-                            "I have worked on a ",
-                            React.createElement(Hyperlink, { link: "/", text: "RESTful API for the backend of a school's app" }),
+                            "I have started a ",
+                            React.createElement(Hyperlink, { link: "/", text: "Freelance 3D printing business" }),
                             ", made a ",
                             React.createElement(Hyperlink, { link: "/", text: "Discord bot to track users for the rhythm game Osu" }),
                             ", and participated in the ",
@@ -116,16 +116,15 @@ var AboutMe = function (_React$Component) {
                         React.createElement("br", null),
                         React.createElement(
                             "div",
-                            { className: "font-thin animate-[slideDown_1.25s]" },
-                            "I also started a small ",
-                            React.createElement(Hyperlink, { link: "/", text: "freelance 3D printing business" }),
-                            " that I run on my spare time!"
-                        ),
-                        React.createElement("br", null),
-                        React.createElement(
-                            "div",
                             { className: "font-thin animate-[slideDown_0.75s]" },
                             "This is my personal website where I can talk about my experiences and host my personal projects."
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "flex mt-5 justify-center mr-5 animate-slideUp" },
+                            React.createElement(OutlineButton, { text: "View my Resume", clickHandle: function clickHandle(e) {
+                                    e.preventDefault();document.location.href = "/PeterZhouResume.pdf";
+                                }, extra: "" })
                         )
                     )
                 )

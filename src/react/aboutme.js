@@ -43,23 +43,23 @@ class AboutMe extends React.Component {
                     </div>
 
                     {/* right side */}
-                    <div className="text-text-2 text-lg w-[32rem]">
-                        <div className="font-thin animate-[slideDown_1.75s]">
-                            I'm a second year undergrad at the University of Toronto, on the road to becoming a <span className="text-copper-penny">software engineer</span>.
+                    <div className="text-text-2 text-lg w-[27rem]">
+                        <div className="font-thin animate-[sideDown_1.75s]">
+                            I'm a second year undergrad at the University of Toronto, becoming a <span className="text-copper-penny">software engineer</span>.
                         </div>
                         <br></br>
                         <div className="font-thin animate-[slideDown_1.25s]">
-                            I have worked on a <Hyperlink link="/" text="RESTful API for the backend of a school's app" />,
+                            I have started a <Hyperlink link="/" text="Freelance 3D printing business" />,
                             made a <Hyperlink link="/" text="Discord bot to track users for the rhythm game Osu" />,
                             and participated in the <Hyperlink link="/" text="Vex Robotics Worlds tournament in Dallas Texas" />.
                         </div>
                         <br></br>
-                        <div className="font-thin animate-[slideDown_1.25s]">
-                            I also started a small <Hyperlink link="/" text="freelance 3D printing business"/> that I run on my spare time!
-                        </div>
-                        <br></br>
                         <div className="font-thin animate-[slideDown_0.75s]">
                             This is my personal website where I can talk about my experiences and host my personal projects.
+                        </div>
+
+                        <div className="flex mt-5 justify-center mr-5 animate-slideUp">
+                            <OutlineButton text="View my Resume" clickHandle={(e) => { e.preventDefault(); document.location.href = "/PeterZhouResume.pdf"; }} extra="" />
                         </div>
 
                     </div>
