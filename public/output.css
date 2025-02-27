@@ -827,6 +827,56 @@ video {
           animation: slideUp 1s cubic-bezier(0, 0, 0.2, 1);
 }
 
+.animate-\[sideDown_1\.25s\]{
+  -webkit-animation: sideDown 1.25s;
+          animation: sideDown 1.25s;
+}
+
+@keyframes slideUp{
+  0%{
+    transform: translateY(1rem);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.animate-\[slideUp_0\.75s\]{
+  -webkit-animation: slideUp 0.75s;
+          animation: slideUp 0.75s;
+}
+
+@keyframes slideDown{
+  0%{
+    transform: translateY(-1rem);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.animate-\[slideDown_1\.65s\]{
+  -webkit-animation: slideDown 1.65s;
+          animation: slideDown 1.65s;
+}
+
+@keyframes slideDown{
+  0%{
+    transform: translateY(-1rem);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.animate-\[slideDown_1\.75s\]{
+  -webkit-animation: slideDown 1.75s;
+          animation: slideDown 1.75s;
+}
+
 .flex-col{
   flex-direction: column;
 }

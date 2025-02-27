@@ -43,8 +43,8 @@ class AboutMe extends React.Component {
                     </div>
 
                     {/* right side */}
-                    <div className="text-text-2 text-lg w-[27rem]">
-                        <div className="font-thin animate-[sideDown_1.75s]">
+                    <div className="text-text-2 text-lg w-[27rem] ">
+                        <div className="font-thin animate-[slideDown_1.75s]">
                             I'm a second year undergrad at the University of Toronto, becoming a <span className="text-copper-penny">software engineer</span>.
                         </div>
                         <br></br>

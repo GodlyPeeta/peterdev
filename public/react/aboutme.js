@@ -89,10 +89,10 @@ var AboutMe = function (_React$Component) {
                     ),
                     React.createElement(
                         "div",
-                        { className: "text-text-2 text-lg w-[27rem] animate-[slideDown_1.25s]" },
+                        { className: "text-text-2 text-lg w-[27rem] " },
                         React.createElement(
                             "div",
-                            { className: "font-thin animate-[sideDown_1.75s]" },
+                            { className: "font-thin animate-[slideDown_1.75s]" },
                             "I'm a second year undergrad at the University of Toronto, becoming a ",
                             React.createElement(
                                 "span",
@@ -105,13 +105,13 @@ var AboutMe = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "font-thin animate-[slideDown_1.25s]" },
-                            "I have helped design a ",
-                            React.createElement(Hyperlink, { link: "/", text: "backend API for a local nonprofit" }),
+                            "I have started a ",
+                            React.createElement(Hyperlink, { link: "/", text: "Freelance 3D printing business" }),
                             ", made a ",
                             React.createElement(Hyperlink, { link: "/", text: "Discord bot to track users for the rhythm game Osu" }),
                             ", and participated in the ",
-                            React.createElement(Hyperlink, { link: "/", text: "Vex Robotics Worlds tournament" }),
-                            " in Dallas Texas."
+                            React.createElement(Hyperlink, { link: "/", text: "Vex Robotics Worlds tournament in Dallas Texas" }),
+                            "."
                         ),
                         React.createElement("br", null),
                         React.createElement(
@@ -123,7 +123,7 @@ var AboutMe = function (_React$Component) {
                             "div",
                             { className: "flex mt-5 justify-center mr-5 animate-slideUp" },
                             React.createElement(OutlineButton, { text: "View my Resume", clickHandle: function clickHandle(e) {
-                                    e.preventDefault();document.location.href = "/assets/PeterZhouResume.pdf";
+                                    e.preventDefault();document.location.href = "/PeterZhouResume.pdf";
                                 }, extra: "" })
                         )
                     )
