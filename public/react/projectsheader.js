@@ -13,7 +13,7 @@ function ProjectsHeader() {
             React.createElement(
                 "div",
                 { className: "font-mono text-copper-penny animate-[slideDown_0.75s]" },
-                "A few coding-related projects I've worked on"
+                "Some neat stuff I've worked on in my free time"
             )
         )
     );

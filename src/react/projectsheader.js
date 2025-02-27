@@ -6,7 +6,7 @@ function ProjectsHeader () {
                     Featured Projects
                 </div>
                 <div className="font-mono text-copper-penny animate-[slideDown_0.75s]">
-                    A few coding-related projects I've worked on
+                    Some neat stuff I've worked on in my free time
                 </div>
             </div>
         </div>
@@ -18,4 +18,4 @@ const elements = document.querySelectorAll('.projectsheader');
 elements.forEach(element => {
     const root = ReactDOM.createRoot(element)
     root.render(<ProjectsHeader />)
-  });
+});

@@ -9,6 +9,7 @@ module.exports = {
       "medium-slate-blue": "#7b77f7",
       "pink-lace": "#FDE2FF",
       "background": "#171f36",
+      "foreground": "#1f2947",
       "headers": "#1C2541",
       "text-1": "#CCD6F6",
       "text-2": "#A7B1D0",

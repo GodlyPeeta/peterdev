@@ -105,13 +105,13 @@ var AboutMe = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "font-thin animate-[slideDown_1.25s]" },
-                            "I have started a ",
-                            React.createElement(Hyperlink, { link: "/", text: "Freelance 3D printing business" }),
+                            "I helped develop a ",
+                            React.createElement(Hyperlink, { link: "/", text: "backend API for a local nonprofit" }),
                             ", made a ",
                             React.createElement(Hyperlink, { link: "/", text: "Discord bot to track users for the rhythm game Osu" }),
                             ", and participated in the ",
-                            React.createElement(Hyperlink, { link: "/", text: "Vex Robotics Worlds tournament in Dallas Texas" }),
-                            "."
+                            React.createElement(Hyperlink, { link: "/", text: "Vex Robotics Worlds tournament" }),
+                            " in Dallas Texas."
                         ),
                         React.createElement("br", null),
                         React.createElement(
