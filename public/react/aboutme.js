@@ -123,7 +123,7 @@ var AboutMe = function (_React$Component) {
                             "div",
                             { className: "flex mt-5 justify-center mr-5 animate-slideUp" },
                             React.createElement(OutlineButton, { text: "View my Resume", clickHandle: function clickHandle(e) {
-                                    e.preventDefault();document.location.href = "/PeterZhouResume.pdf";
+                                    e.preventDefault();document.location.href = "/assets/PeterZhouResume.pdf";
                                 }, extra: "" })
                         )
                     )

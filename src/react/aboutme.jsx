@@ -59,7 +59,7 @@ class AboutMe extends React.Component {
                         </div>
 
                         <div className="flex mt-5 justify-center mr-5 animate-slideUp">
-                            <OutlineButton text="View my Resume" clickHandle={(e) => { e.preventDefault(); document.location.href = "/PeterZhouResume.pdf"; }} extra="" />
+                            <OutlineButton text="View my Resume" clickHandle={(e) => { e.preventDefault(); document.location.href = "/assets/PeterZhouResume.pdf"; }} extra="" />
                         </div>
 
                     </div>
