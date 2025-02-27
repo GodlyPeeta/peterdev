@@ -22,5 +22,6 @@ function ProjectsHeader() {
 var elements = document.querySelectorAll('.projectsheader');
 
 elements.forEach(function (element) {
-    ReactDOM.render(React.createElement(ProjectsHeader), element);
+    var root = ReactDOM.createRoot(element);
+    root.render(React.createElement(ProjectsHeader, null));
 });

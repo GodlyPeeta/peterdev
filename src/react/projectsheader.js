@@ -16,5 +16,6 @@ function ProjectsHeader () {
 const elements = document.querySelectorAll('.projectsheader');
 
 elements.forEach(element => {
-  ReactDOM.render(React.createElement(ProjectsHeader), element);
-});
+    const root = ReactDOM.createRoot(element)
+    root.render(<ProjectsHeader />)
+  });
