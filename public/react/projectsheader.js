@@ -26,12 +26,12 @@ var ProjectsHeader = function (_React$Component) {
                     { className: "justify-start flex-wrap" },
                     React.createElement(
                         "div",
-                        { className: "text-text-1 text-4xl subpixel-antialiased" },
+                        { className: "text-text-1 text-4xl subpixel-antialiased animate-[slideDown_1.25s]" },
                         "Featured Projects"
                     ),
                     React.createElement(
                         "div",
-                        { className: "font-mono text-copper-penny" },
+                        { className: "font-mono text-copper-penny animate-[slideDown_0.75s]" },
                         "A few coding-related projects I've worked on"
                     )
                 )

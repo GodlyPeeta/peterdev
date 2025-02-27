@@ -3,10 +3,10 @@ class ProjectsHeader extends React.Component {
         return (
             <div>
                 <div className="justify-start flex-wrap">
-                    <div className="text-text-1 text-4xl subpixel-antialiased">
+                    <div className="text-text-1 text-4xl subpixel-antialiased animate-[slideDown_1.25s]">
                         Featured Projects
                     </div>
-                    <div className="font-mono text-copper-penny">
+                    <div className="font-mono text-copper-penny animate-[slideDown_0.75s]">
                         A few coding-related projects I've worked on
                     </div>
                 </div>
