@@ -61,7 +61,7 @@ function ProjectCardVex () {
                     <ProjectCardDescription 
                     header="Vex Robotics Team Captain"
                     year="2021"
-                    desc="Team captain for the 2021 Vex robotics game! Second place in Provincials, lost first place due to a faulty battery :("
+                    desc="Team captain for the 2021 Vex robotics game! Wrote a PID and Odometry system and achieved second place in Provincials, lost first place due to a faulty battery :("
                     desc2=""/>
                 </div>
 
