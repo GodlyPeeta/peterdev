@@ -39,6 +39,7 @@ var SocialsButton = function (_React$Component) {
 
 function ProjectCardDescription(_ref) {
     var header = _ref.header,
+        year = _ref.year,
         desc = _ref.desc,
         desc2 = _ref.desc2;
 
@@ -47,8 +48,21 @@ function ProjectCardDescription(_ref) {
         null,
         React.createElement(
             "div",
-            { "class": "text-text-1 text-2xl subpixel-antialiased" },
-            header
+            { "class": "flex justify-between items-center text-text-1 text-2xl subpixel-antialiased" },
+            React.createElement(
+                "div",
+                { "class": "text-text-1 text-left" },
+                " ",
+                header,
+                " "
+            ),
+            React.createElement(
+                "div",
+                { "class": "text-text-2 text-right text-xl" },
+                " ",
+                year,
+                " "
+            )
         ),
         React.createElement(
             "p",
@@ -73,21 +87,22 @@ function ProjectCardPppad() {
             React.createElement(
                 "div",
                 { "class": "grid grid-cols-2 md:grid-cols-2 gap-4 overflow-visible" },
-                React.createElement("img", { "class": "w-fit duration-300 hover:scale-150 rounded-xl max-h-44", src: "/assets/projects/pppad/pppad1.png" }),
-                React.createElement("img", { "class": "w-fit duration-300 hover:scale-150 rounded-xl max-h-44", src: "/assets/projects/pppad/pppad2.png" })
+                React.createElement("img", { "class": "w-fit rounded-xl max-h-44", src: "/assets/projects/pppad/pppad1.png" }),
+                React.createElement("img", { "class": "w-fit rounded-xl max-h-44", src: "/assets/projects/pppad/pppad2.png" })
             ),
             React.createElement(
                 "div",
                 { "class": "px-6 pt-4" },
                 React.createElement(ProjectCardDescription, {
                     header: "Hall Effect Keypad",
+                    year: "2023",
                     desc: "Rapid trigger keypad for osu!",
                     desc2: "The Wooting offerings were too expensive at the time, so I made my own. Takes analog signals from the magnet embedded in the switch for variable actuation distances" })
             ),
             React.createElement(
                 "div",
                 { "class": "px-3 py-2 flex space-x-2" },
-                React.createElement(SocialsButton, { title: "Youtube", link: "https://www.youtube.com/shorts/CRPU_5PrwT0" })
+                React.createElement(SocialsButton, { title: "Youtube (Prototype)", link: "https://www.youtube.com/shorts/CRPU_5PrwT0" })
             )
         )
     );
@@ -103,43 +118,137 @@ function ProjectCardVex() {
             React.createElement(
                 "div",
                 { "class": "grid grid-cols-2 md:grid-cols-2 gap-4 overflow-visible" },
-                React.createElement("img", { "class": "w-fit duration-300 hover:scale-150 rounded-xl max-h-44", src: "/assets/projects/pppad/pppad1.png" }),
-                React.createElement("img", { "class": "w-fit duration-300 hover:scale-150 rounded-xl max-h-44", src: "/assets/projects/pppad/pppad2.png" })
+                React.createElement("img", { "class": "w-fit rounded-xl max-h-44", src: "/assets/projects/vex/thing.png" }),
+                React.createElement("img", { "class": "w-fit rounded-xl max-h-44", src: "/assets/projects/vex/thing2.png" })
             ),
             React.createElement(
                 "div",
                 { "class": "px-6 pt-4" },
                 React.createElement(ProjectCardDescription, {
-                    header: "Hall Effect Keypad",
-                    desc: "Rapid trigger keypad for osu!",
-                    desc2: "The Wooting offerings were too expensive at the time, so I made my own. Takes analog signals from the magnet embedded in the switch for variable actuation distances" })
+                    header: "Vex Robotics Team Captain",
+                    year: "2021",
+                    desc: "Team captain for the 2021 Vex robotics game! Second place in Provincials, lost first place due to a faulty battery :(",
+                    desc2: "" })
             ),
             React.createElement(
                 "div",
                 { "class": "px-3 py-2 flex space-x-2" },
-                React.createElement(SocialsButton, { title: "Youtube", link: "https://www.youtube.com/shorts/CRPU_5PrwT0" })
+                React.createElement(SocialsButton, { title: "Github", link: "https://github.com/GodlyPeeta/vex-tipping-point-auto" }),
+                React.createElement(SocialsButton, { title: "Youtube", link: "https://www.youtube.com/live/1_hn4KvXP64?si=1xigZBP6Ukx1waAS&t=39739" })
+            )
+        )
+    );
+}
+
+function ProjectCardPPJuice() {
+    return React.createElement(
+        "div",
+        null,
+        React.createElement(
+            "div",
+            { "class": "bg-foreground w-[30rem] rounded-xl" },
+            React.createElement(
+                "div",
+                { "class": "grid overflow-visible" },
+                React.createElement("img", { "class": "w-fit rounded-xl", src: "/assets/projects/ppjuice/ppj4.png" })
+            ),
+            React.createElement(
+                "div",
+                { "class": "px-6 pt-4" },
+                React.createElement(ProjectCardDescription, {
+                    header: "ppjuice (osu bot)",
+                    year: "2021",
+                    desc: "Discord bot for osu! Wasn't satisfied with the limits and speed of the other osu bots, so I made my own. Has all the features, like real time score tracking and map visualization.",
+                    desc2: "No longer maintained." })
+            ),
+            React.createElement(
+                "div",
+                { "class": "px-3 py-2 flex space-x-2" },
+                React.createElement(SocialsButton, { title: "Github", link: "https://github.com/GodlyPeeta/pp-juice" })
+            )
+        )
+    );
+}
+
+function ProjectCard3dp() {
+    return React.createElement(
+        "div",
+        null,
+        React.createElement(
+            "div",
+            { "class": "bg-foreground w-[30rem] rounded-xl" },
+            React.createElement(
+                "div",
+                { "class": "grid grid-cols-2 md:grid-cols-2 gap-4 overflow-visible" },
+                React.createElement("img", { "class": "w-fit rounded-xl max-h-44", src: "/assets/projects/3dp/3dp1.png" }),
+                React.createElement("img", { "class": "w-fit rounded-xl max-h-44", src: "/assets/projects/3dp/3dp2.png" })
+            ),
+            React.createElement(
+                "div",
+                { "class": "px-6 pt-4 py-4" },
+                React.createElement(ProjectCardDescription, {
+                    header: "Freelance 3D Printing",
+                    year: "2024",
+                    desc: "Designed and manufactured cool stuff for business and consumer clients. Made roughly $5000 revenue last year.",
+                    desc2: "" })
             )
         )
     );
 }
 
 function ProjectCardList() {
-    return React.createElement(
-        "div",
-        { "class": "grid grid-cols-2 gap-8 mt-[5%]" },
+    return (
+        // <div>
+        //     <div class="grid grid-cols-2 gap-8 mt-[5%]">
+        //         <div class="animate-fade"> <ProjectCardPppad/> </div>
+        //         <div class="animate-fade"> <ProjectCardVex/> </div>
+        //     </div>
+        //     <div class="grid grid-cols-2 gap-8 mt-[4%]">
+        //         <div class="animate-fade"> <ProjectCardPPJuice/> </div>
+        //         <div class="animate-fade"> <ProjectCard3dp/> </div>
+        //     </div>
+        // </div>
+
+
         React.createElement(
             "div",
-            { "class": "animate-fade" },
-            " ",
-            React.createElement(ProjectCardPppad, null),
-            " "
-        ),
-        React.createElement(
-            "div",
-            { "class": "animate-fade" },
-            " ",
-            React.createElement(ProjectCardVex, null),
-            " "
+            { "class": "columns-2 gap-8 mt-[5%] pb-[5%]" },
+            React.createElement(
+                "div",
+                { "class": "grid gap-8" },
+                React.createElement(
+                    "div",
+                    { "class": "animate-fade hover:scale-105 duration-200" },
+                    " ",
+                    React.createElement(ProjectCard3dp, null),
+                    " "
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "animate-fade hover:scale-105 duration-200" },
+                    " ",
+                    React.createElement(ProjectCardPPJuice, null),
+                    " "
+                )
+            ),
+            React.createElement(
+                "div",
+                { "class": "grid gap-8" },
+                React.createElement(
+                    "div",
+                    { "class": "animate-fade hover:scale-105 duration-200" },
+                    " ",
+                    React.createElement(ProjectCardPppad, null),
+                    " "
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "animate-fade hover:scale-105 duration-200" },
+                    " ",
+                    React.createElement(ProjectCardVex, null),
+                    " "
+                )
+            )
         )
     );
 }
