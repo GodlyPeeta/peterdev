@@ -49,9 +49,9 @@ class AboutMe extends React.Component {
                         </div>
                         <br></br>
                         <div className="font-thin animate-[slideDown_1.25s]">
-                            I helped develop a <Hyperlink link="/" text="backend API for a local nonprofit" />,
-                            made a <Hyperlink link="/" text="Discord bot to track users for the rhythm game Osu" />,
-                            and participated in the <Hyperlink link="/" text="Vex Robotics Worlds tournament" /> in Dallas Texas.
+                            I helped develop a <Hyperlink link="/assets/PeterZhouResume.pdf" text="backend API for a local nonprofit" />,
+                            made a <Hyperlink link="/projects" text="Discord bot to track users for the rhythm game Osu" />,
+                            and participated in the <Hyperlink link="/projects" text="Vex Robotics Worlds tournament" /> in Dallas Texas.
                         </div>
                         <br></br>
                         <div className="font-thin animate-[slideDown_0.75s]">
