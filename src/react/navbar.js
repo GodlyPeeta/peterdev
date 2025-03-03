@@ -49,8 +49,8 @@ class Navbar extends React.Component {
                             <NavBarHeaders number="3." title="Experiences" className="" />
                         </a> */}
 
-                        <a href="/contact" >
-                            <NavBarHeaders number="3." title="Contact" className="" />
+                        <a href="/" >
+                            <NavBarHeaders number="3." title="blog (coming soon)" className="" />
                         </a>
 
                     </div>
