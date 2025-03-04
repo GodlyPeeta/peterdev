@@ -58,8 +58,9 @@ class AboutMe extends React.Component {
                             This is my personal website where I can talk about my experiences and host my personal projects.
                         </div>
 
-                        <div className="flex mt-5 justify-center mr-5 animate-slideUp">
-                            <OutlineButton text="View my Resume" clickHandle={(e) => { e.preventDefault(); document.location.href = "/assets/PeterZhouResume.pdf"; }} extra="" />
+                        <div className="flex mt-5 justify-center mr-5 animate-slideUp gap-10">
+                            <OutlineButton text="My Resume" clickHandle={(e) => { e.preventDefault(); document.location.href = "/assets/PeterZhouResume.pdf"; }} extra="" />
+                            <OutlineButton text="My Projects" clickHandle={(e) => { e.preventDefault(); document.location.href = "/projects"; }} extra="" />
                         </div>
 
                     </div>
