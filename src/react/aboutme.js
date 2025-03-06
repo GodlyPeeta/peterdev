@@ -45,7 +45,7 @@ class AboutMe extends React.Component {
                     {/* right side */}
                     <div className="text-text-2 text-lg w-[27rem] ">
                         <div className="font-thin animate-[slideDown_1.75s]">
-                            I'm a second year undergrad at the University of Toronto, becoming a <span className="text-copper-penny">software engineer</span>.
+                            I'm a second year undergrad at the <span class="text-copper-penny">University of Toronto</span>, becoming a <span className="text-copper-penny">software engineer</span>.
                         </div>
                         <br></br>
                         <div className="font-thin animate-[slideDown_1.25s]">

@@ -93,7 +93,13 @@ var AboutMe = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "font-thin animate-[slideDown_1.75s]" },
-                            "I'm a second year undergrad at the University of Toronto, becoming a ",
+                            "I'm a second year undergrad at the ",
+                            React.createElement(
+                                "span",
+                                { "class": "text-copper-penny" },
+                                "University of Toronto"
+                            ),
+                            ", becoming a ",
                             React.createElement(
                                 "span",
                                 { className: "text-copper-penny" },
