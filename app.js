@@ -13,6 +13,17 @@ let contactRouter = require('./routes/contact/contact')
 
 let app = express();
 
+// app.use((req, res, next) => {
+//     const currentTime = new Date().toLocaleString();
+//     const ip = req.ip;
+//     const method = req.method;
+//     const path = req.path;
+
+//     console.log(`[${currentTime}] ${method} request from ${ip} to ${path}`);
+    
+//     next();
+// });
+
 app.use('/', indexRouter);
 app.use('/projects', projectRouter);
 app.use('/contact', contactRouter);

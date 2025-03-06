@@ -916,16 +916,16 @@ video {
   gap: 3.5rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
